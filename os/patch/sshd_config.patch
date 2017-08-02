@@ -1,0 +1,34 @@
+--- sshd_config.old	2017-05-14 22:49:14.085899000 +0000
++++ sshd_config	2017-05-14 22:52:31.701835000 +0000
+@@ -21,7 +21,7 @@
+ #HostKey /usr/local/etc/ssh/ssh_host_rsa_key
+ #HostKey /usr/local/etc/ssh/ssh_host_dsa_key
+ #HostKey /usr/local/etc/ssh/ssh_host_ecdsa_key
+-#HostKey /usr/local/etc/ssh/ssh_host_ed25519_key
++HostKey /usr/local/etc/ssh/ssh_host_ed25519_key
+ 
+ # Ciphers and keying
+ #RekeyLimit default none
+@@ -33,7 +33,7 @@
+ # Authentication:
+ 
+ #LoginGraceTime 2m
+-#PermitRootLogin prohibit-password
++PermitRootLogin no
+ #StrictModes yes
+ #MaxAuthTries 6
+ #MaxSessions 10
+@@ -84,10 +84,10 @@
+ # and ChallengeResponseAuthentication to 'no'.
+ #UsePAM yes
+ 
+-#AllowAgentForwarding yes
+-#AllowTcpForwarding yes
++AllowAgentForwarding no
++AllowTcpForwarding no
+ #GatewayPorts no
+-#X11Forwarding yes
++X11Forwarding no
+ #X11DisplayOffset 10
+ #X11UseLocalhost yes
+ #PermitTTY yes

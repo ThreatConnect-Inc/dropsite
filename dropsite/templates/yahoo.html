@@ -1,0 +1,15 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}
+      <h1>Downloading Full Headers from Yahoo</h1>
+      <img src="{{ url_for('static', filename = 'view_raw.png') }}" class="img-responsive"></img>
+      </br></br>
+      In the window that opens, select all and copy the text into the clipboard. (CTRL-C)</br>
+      Then click here and paste the email into the box.
+      </br></br>
+      <a type="button" class="btn btn btn-primary btn-lg" href="/email">Email Upload</a>
+    {% endblock %}
+</div>
+{% endblock %}

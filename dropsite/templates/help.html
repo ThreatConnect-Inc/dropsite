@@ -1,0 +1,14 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}
+      <h1>Choose Your Email Client</h1>
+      <a type="button" class="btn btn btn-primary btn-lg" href="help/gmail">Gmail</a>
+      </br></br>
+      <a type="button" class="btn btn btn-primary btn-lg" href="help/yahoo">Yahoo</a>
+      </br></br>
+      <a type="button" class="btn btn btn-primary btn-lg" href="help/apple_mail">Apple Mail</a>
+    {% endblock %}
+</div>
+{% endblock %}

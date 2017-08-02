@@ -1,0 +1,9 @@
+--- crontab.old	2017-05-13 05:35:18.082143000 +0000
++++ crontab	2017-05-13 05:16:13.931548000 +0000
+@@ -23,3 +23,6 @@
+ # Adjust the time zone if the CMOS clock keeps local time, as opposed to
+ # UTC time.  See adjkerntz(8) for details.
+ 1,31	0-5	*	*	*	root	adjkerntz -a
++#
++# Run the webhook to report uploaded files
++*	*	*	*	*	www	/usr/local/bin/python3.6 /vagrant/dropsite/webhook.py

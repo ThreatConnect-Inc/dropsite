@@ -1,0 +1,22 @@
+--- login.conf.old	2017-03-09 20:13:07.000000000 +0000
++++ login.conf	2017-03-14 02:38:11.098042000 +0000
+@@ -26,7 +26,7 @@
+ 	:passwd_format=sha512:\
+ 	:copyright=/etc/COPYRIGHT:\
+ 	:welcome=/etc/motd:\
+-	:setenv=MAIL=/var/mail/$,BLOCKSIZE=K:\
++	:setenv=MAIL=/var/mail/$,BLOCKSIZE=K,LC_COLLATE=C:\
+ 	:path=/sbin /bin /usr/sbin /usr/bin /usr/local/sbin /usr/local/bin ~/bin:\
+ 	:nologin=/var/run/nologin:\
+ 	:cputime=unlimited:\
+@@ -46,7 +46,9 @@
+ 	:umtxp=unlimited:\
+ 	:priority=0:\
+ 	:ignoretime@:\
+-	:umask=022:
++	:umask=022:\
++	:charset=UTF-8:\
++	:lang=en_US.UTF-8:
+ 
+ 
+ #

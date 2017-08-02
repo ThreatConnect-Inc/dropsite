@@ -1,0 +1,16 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}
+      <h1>Downloading Original Email from Gmail</h1>
+      <img src="{{ url_for('static', filename = 'show_original.png') }}" class="img-responsive"></img>
+      <img src="{{ url_for('static', filename = 'download_original.png') }}" class="img-responsive"></img>
+      </br></br>
+      When you have downloaded the original file,</br>
+      click here and upload it.
+      </br></br>
+      <a type="button" class="btn btn btn-primary btn-lg" href="/file">File Upload</a>
+    {% endblock %}
+</div>
+{% endblock %}

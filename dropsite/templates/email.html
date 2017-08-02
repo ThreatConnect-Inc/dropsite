@@ -1,0 +1,21 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}
+      <h1>Upload Raw Email</h1>
+        <form method=post enctype=multipart/form-data id=usrform>
+            <textarea rows=30 cols=120 name=text></textarea>
+            </br></br>
+            <input type=submit name=text class="btn btn btn-primary btn-lg" value=Submit>
+        </form>
+    {% endblock %}
+</div>
+{% endblock %}

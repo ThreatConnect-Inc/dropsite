@@ -1,0 +1,11 @@
+{% extends "user.html" %}
+
+{% block content %}
+<div class="container">
+    {% block page_content %}
+      <h1>Choose What to Upload</h1>
+      <a type="button" class="btn btn btn-primary btn-lg" href="file">Suspicious File</a>
+      <a type="button" class="btn btn btn-primary btn-lg" href="email">Raw Email</a>
+    {% endblock %}
+</div>
+{% endblock %}
