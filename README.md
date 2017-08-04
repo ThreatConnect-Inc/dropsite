@@ -14,3 +14,6 @@ To run locally, first install the following pre-requisites:
 
 The box is configured to use port 8081 for the dropsite app. Make sure that this port is available on your host workstation. If it is not available, change the port in the Vagrantfile.
 
+After all pre-requisites are installed, run the app with the following command from the directory this repo is cloned into:
+
+`vagrant up`
