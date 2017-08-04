@@ -17,3 +17,10 @@ The box is configured to use port 8081 for the dropsite app. Make sure that this
 After all pre-requisites are installed, run the app with the following command from the directory this repo is cloned into:
 
 `vagrant up`
+
+**NOTE:** The following two startup messages are returned as errors, but are not actually errors. They can both be safely ignored.
+
+```
+==> default: nginx: the configuration file /usr/local/etc/nginx/nginx.conf syntax is ok
+==> default: nginx: configuration file /usr/local/etc/nginx/nginx.conf test is successful
+```
